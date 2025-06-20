@@ -52,7 +52,7 @@ Welcome to the **Movie App**, a web application that allows you to explore movie
 ## 📁 Project Structure
 
 <p align="center">
-  <img src="https://github.com/reemsarhan/MovieApp/blob/main/READMEpics/diagram-export-5-6-2025-8_58_00-PM.png?raw=true" alt="Project Structure" width="800"/>
+  <img src="https://github.com/mahmoudsakrr/Next-Movie-App/blob/main/movie_app/imgs_readme/project_structure.png" alt="Project Structure" width="800"/>
 </p>
 
 ## ⚙️ Prerequisites
