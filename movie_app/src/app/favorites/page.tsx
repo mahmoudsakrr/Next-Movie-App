@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function FavoritesPage() {
   const { favorites, removeFavorite } = useFavoritesStore();
-  const NO_POSTER_PLACEHOLDER = process.env.NO_POSTER_PLACEHOLDER;
+  const NO_POSTER_PLACEHOLDER: string = process.env.NO_POSTER_PLACEHOLDER || '';
   return (
     <main className={styles.page}>
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Your Favorite Movies</h1>
@@ -28,7 +28,7 @@ export default function FavoritesPage() {
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.3 }}
             >
-              <Image src={movie.Poster !== 'N/A' ? movie.Poster : '/no-poster.png'} alt={movie.Title} className={styles.poster} width={220} height={320}/>
+              <Image src={movie.Poster !== 'N/A' ? movie.Poster : NO_POSTER_PLACEHOLDER} alt={movie.Title} className={styles.poster} width={220}height={320}/>
               <div className={styles.cardContent}>
                 <h2>{movie.Title}</h2>
                 <p>{movie.Year}</p>

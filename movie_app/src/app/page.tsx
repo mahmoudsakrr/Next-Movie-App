@@ -14,7 +14,7 @@ const RANDOM_TITLES = [
   'Avengers', 'Fight Club', 'The Dark Knight', 'Shrek', 'Toy Story'
 ];
 
-const NO_POSTER_PLACEHOLDER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="140" height="210" viewBox="0 0 140 210"%3E%3Crect width="140" height="210" fill="%23cccccc" /%3E%3Ctext x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="14px" fill="%23888888"%3ENo Poster%3C/text%3E%3C/svg%3E';
+const NO_POSTER_PLACEHOLDER: string = process.env.NO_POSTER_PLACEHOLDER || '';
 
 export default function Home() {
   const [query, setQuery] = useState('');
@@ -31,6 +31,7 @@ export default function Home() {
     try {
       const fullDetails = await fetcher({ params: { i: movie.imdbID } });
       addFavorite({ ...movie, imdbRating: fullDetails.imdbRating });
+      console.log("Favorites: ", favorites);
     } catch (err) {
       console.error("Failed to fetch details for favorite", err);
       addFavorite(movie);
@@ -55,6 +56,7 @@ export default function Home() {
         setMovies(unique);
       } catch (err: any) {
         setError('Failed to load random movies');
+        console.error("Failed to load random movies", err);
       } finally {
         setLoading(false);
       }
