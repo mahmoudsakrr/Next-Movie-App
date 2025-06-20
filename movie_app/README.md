@@ -104,7 +104,7 @@ The app is deployed and can be accessed live at the following URL:
 **[Movie App - Live Demo](https://noonmovies.vercel.app/)**  
   ### https://noonmovies.vercel.app/
 <p align="center">
-  <img src="https://github.com/mahmoudsakrr/Next-Movie-App/blob/main/movie_app/imgs_readme/deployment.png" width="400"/>
+  <img src="https://github.com/mahmoudsakrr/Next-Movie-App/blob/main/movie_app/imgs_readme/project_structure.png" width="400"/>
 </p>
 
 
