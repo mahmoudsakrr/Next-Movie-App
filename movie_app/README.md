@@ -114,5 +114,6 @@ The app is deployed and can be accessed live at the following URL:
 Below are screenshots of the MovieApp interface in both light and dark modes and hamburger menu, showcasing responsive layout and theming:
 
 <p align="center">
-  <img src="" alt="Light Mode" width="48%"/>
+  <img src="https://github.com/mahmoudsakrr/Next-Movie-App/blob/main/movie_app/imgs_readme/light_desktop.png" alt="Light Mode" width="50%"/>
+  <img src="https://github.com/mahmoudsakrr/Next-Movie-App/blob/main/movie_app/imgs_readme/dark_mobile.png" alt="Dark Mode" width="50%"/>
 </p>
