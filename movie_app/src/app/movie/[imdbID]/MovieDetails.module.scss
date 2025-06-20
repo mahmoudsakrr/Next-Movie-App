@@ -1,0 +1,80 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 2rem auto;
+  background: var(--color-card);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+  color: var(--color-text);
+}
+
+.poster {
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 0.7rem;
+  background: var(--color-border);
+  margin-bottom: 1rem;
+}
+
+.info {
+  width: 100%;
+  text-align: left;
+  color: var(--color-text);
+}
+
+.info h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.favBtn, .favActive {
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  border: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  background: var(--color-accent-primary);
+  color: var(--color-text-primary);
+}
+
+.favActive {
+  background: var(--color-accent-secondary);
+  color: var(--color-text-secondary);
+}
+
+.light .favBtn, .light .favActive {
+  background: var(--color-accent-primary);
+  color: var(--color-text-primary);
+}
+
+.light .favActive {
+  background: var(--color-accent-secondary);
+  color: var(--color-text-secondary);
+}
+
+
+.center {
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .details {
+    padding: 1rem 0.5rem;
+  }
+  .poster {
+    width: 120px;
+    height: 180px;
+  }
+  .info h1 {
+    font-size: 1.2rem;
+  }
+} 

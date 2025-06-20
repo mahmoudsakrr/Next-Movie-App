@@ -1,0 +1,17 @@
+.toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-primary);
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-shadow: 0 0 0 0 rgba(94,129,244,0);
+
+  &:hover, &:focus {
+    background: var(--color-accent);
+    box-shadow: 0 2px 8px rgba(94,129,244,0.15);
+  }
+} 
