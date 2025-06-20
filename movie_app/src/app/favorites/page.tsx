@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function FavoritesPage() {
   const { favorites, removeFavorite } = useFavoritesStore();
-  const NO_POSTER_PLACEHOLDER: string = process.env.NO_POSTER_PLACEHOLDER || '';
+  const NO_POSTER_PLACEHOLDER: string = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="220" height="320" viewBox="0 0 220 320"%3E%3Crect width="220" height="320" fill="%23cccccc" /%3E%3Ctext x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="18px" fill="%23888888"%3ENo Poster%3C/text%3E%3C/svg%3E';
   return (
     <main className={styles.page}>
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Your Favorite Movies</h1>
